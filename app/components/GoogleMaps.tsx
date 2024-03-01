@@ -20,7 +20,7 @@ export default function GoogleMaps(){
             const {Marker} = (await loader.importLibrary('marker')) as google.maps.MarkerLibrary;
             const options: google.maps.MapOptions={
                 center: locationInMap,
-                zoom: 15,
+                zoom: 18,
                 mapId:'NEXT_MAPS_TUTS',
             };
             
@@ -36,7 +36,7 @@ export default function GoogleMaps(){
     },[]);
 
     return (
-        <div className="w-72 h-72 " ref={mapReference}>
+        <div className="w-[500px] h-[439px] rounded-[20px]" ref={mapReference}>
         GoogleMaps
     </div>
     )

@@ -7,8 +7,12 @@ export default function Home() {
     <main>
       <>
         {/* //*to use this component just use <GoogleMaps/> in the main component */}
-        <GoogleMaps/>
-        <GetStarted/>
+        <div className="flex flex-row justify-center py-10">
+          <div className="mr-[63px]">
+            <GoogleMaps />
+          </div>
+          <div><GetStarted/></div>
+        </div>
       </>
       
     </main>

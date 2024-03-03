@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import React from "react";
 
 export default  function sendEmail(fromName:string,fromEmail:string , toName:string, message:string) {
  
@@ -9,16 +10,18 @@ export default  function sendEmail(fromName:string,fromEmail:string , toName:str
     to_name: toName,
     message: message,
   };
-  emailjs.send(
-    'service_ln34e4m', 
-    'template_jbz53cl', emailParams, 
-    'RcBrF1skyONHEMFFM'
-    )
-    .then((response) => {
-      console.log("Email sent successfully!", response);
-    })
-    .catch((error) => {
-      console.error("Error sending email:", error);
-    });
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+
+  try{
+    const response = emailjs.send(serviceId, templateId, emailParams, publicKey);
+    console.log("Email sent successfully")
+    return response;
+
+  }catch (error) {
+    console.error("Error sending email:", error);
+    throw error;  
+  }
 }
 

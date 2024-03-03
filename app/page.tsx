@@ -1,6 +1,6 @@
 import Image from "next/image";
 import GoogleMaps from "./components/GoogleMaps";
-import GetStarted from "./components/GetStarted";
+import GetInTouch from "./components/GetInTouch";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
           <div className="mr-[63px]">
             <GoogleMaps />
           </div>
-          <div><GetStarted/></div>
+          <div><GetInTouch/></div>
         </div>
       </>
       

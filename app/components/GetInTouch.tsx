@@ -1,7 +1,8 @@
 'use client'
 import React from 'react';
 import sendEmail from '../utils/Email';
-export default function GetStarted() {
+import { EmailJSResponseStatus } from '@emailjs/browser';
+export default function GetInTouch() {
   const [email, setEmail] = React.useState("");
   const [firstName, setFirstName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
@@ -10,6 +11,17 @@ export default function GetStarted() {
   const handleSubmit = async (event:React.FormEvent) => {
     event.preventDefault();
     sendEmail(firstName,email,lastName,message);
+    try{
+      const response:EmailJSResponseStatus = await sendEmail(firstName,email,lastName,message);
+      if(response.status === 200){
+        // TODO change this to a popup instead of a normal alert :)
+        alert("Email sent successfully")
+      }else{
+        alert("Error sending email")
+      }
+    }catch(erorr){
+      alert("Error sending email")
+    }
   };
  
 

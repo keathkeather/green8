@@ -36,7 +36,7 @@ export default function GoogleMaps(){
     },[]);
 
     return (
-        <div className="w-[500px] h-[439px] rounded-[20px]" ref={mapReference}>
+        <div className="w-[650px] h-[355px] rounded-[20px]" ref={mapReference}>
         GoogleMaps
     </div>
     )

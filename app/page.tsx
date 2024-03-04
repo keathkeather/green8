@@ -2,7 +2,7 @@ import Image from "next/image";
 import GoogleMaps from "./components/GoogleMaps";
 import GetInTouch from "./components/GetInTouch";
 import NavBar from "./components/NavBar";
-
+import Reviews from "./components/reviews";
 export default function Home() {
   return (
     <main>
@@ -16,7 +16,7 @@ export default function Home() {
           <div><GetInTouch/></div>
         </div>
       </>
-      
+      <Reviews />
     </main>
   );
 }

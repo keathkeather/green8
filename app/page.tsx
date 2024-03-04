@@ -1,14 +1,16 @@
 import Image from "next/image";
 import GoogleMaps from "./components/GoogleMaps";
 import GetStarted from "./components/GetStarted";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
     <main>
       <>
         {/* //*to use this component just use <GoogleMaps/> in the main component */}
-        <div className="flex flex-row justify-center py-10">
-          <div className="mr-[63px]">
+        <NavBar />
+        <div className="flex flex-row justify-center pt-[47px]">
+          <div className="mr-[47px]">
             <GoogleMaps />
           </div>
           <div><GetStarted/></div>

@@ -20,6 +20,7 @@ const config: Config = {
         'diamondHead': '#6FCF97',
         'mead' : '#FFC978',
         'goop' : '#A1F65E',
+        'navBlack' : '#141213',
       }
     },
   },

@@ -4,6 +4,7 @@ import GetInTouch from "./components/GetInTouch";
 import NavBar from "./components/NavBar";
 import Reviews from "./components/reviews";
 import WhoWeAre from "./components/WhoWeAre";
+import ContactUs from "./components/ContactUs";
 export default function Home() {
   return (
     <main>
@@ -18,6 +19,9 @@ export default function Home() {
             <GoogleMaps />
           </div>
           <div><GetInTouch/></div>
+        </div>
+        <div>
+          <ContactUs />
         </div>
       </>
       <Reviews />

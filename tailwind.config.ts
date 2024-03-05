@@ -16,6 +16,8 @@ const config: Config = {
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
       },
       colors:{
         'diamondHead': '#6FCF97',

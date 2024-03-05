@@ -6,12 +6,14 @@ import Reviews from "./components/reviews";
 import WhoWeAre from "./components/WhoWeAre";
 import ContactUs from "./components/ContactUs";
 import AnimatedText from "./components/AnimatedText";
+import HeroHeader from "./components/HeroHeader";
 export default function Home() {
   return (
     <main>
       <>
         {/* //*to use this component just use <GoogleMaps/> in the main component */}
         <NavBar />
+        <HeroHeader />
         <div>
           <WhoWeAre />
           <AnimatedText />

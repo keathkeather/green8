@@ -6,7 +6,7 @@ export default function ContactUs() {
         <div className="relative">
             <img src="/cubg.svg" alt="CUBG" className="w-full h-auto mt-20 mb-12" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <p className="font-bold text-[40px] mt-8">Follow us on <a href="#" className="hover:underline">Facebook</a></p>
+                <p className="font-bold text-[40px] mt-8">Follow us on <a href="https://www.facebook.com/green8fitness" className="hover:underline">Facebook</a></p>
             </div>
         </div>
         <div className="w-full flex justify-between mb-8">

@@ -7,6 +7,8 @@ import WhoWeAre from "./components/WhoWeAre";
 import ContactUs from "./components/ContactUs";
 import AnimatedText from "./components/AnimatedText";
 import HeroHeader from "./components/HeroHeader";
+import RatesMain from "./components/RatesMain";
+
 export default function Home() {
   return (
     <main>
@@ -19,6 +21,9 @@ export default function Home() {
           <AnimatedText />
         </div>
         <Reviews />
+        <div className="flex flex-row justify-center">
+            <RatesMain/>
+          </div>
         <div className="flex flex-row justify-center pt-[47px] pb-[47px]">
           <div className="mr-[47px]">
             <GoogleMaps />

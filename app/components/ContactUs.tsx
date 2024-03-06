@@ -37,7 +37,9 @@ export default function ContactUs() {
                             <li>098765 34621</li>
                         </ul>
                     </div>
+                    <a href='#hero'>
                     <img src="/cui.svg" alt="CUI" className="w-full h-auto mt-8" />
+                    </a>
                 </div>
             </div>
         </div>

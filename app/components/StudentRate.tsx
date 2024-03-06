@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function StudentRate(){
     return(
-    <div className='ml-[337px] flex space-x-[73px]'>
+    <div className='ml-[120px] flex space-x-[73px]'>
         <div className="rounded-[20px] mt-[52px] bg-gradient-to-t from-goop via-mead to-diamondHead p-[2px] w-[366px] h-[421px]">
                 <div className="bg-black rounded-[18px] px-[49px] pt-[38px] pb-[83px] h-[415px]">
                     <div className="font-bold font-montserrat text-[40px] flex space-x-0">

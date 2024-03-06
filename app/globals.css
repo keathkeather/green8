@@ -51,3 +51,24 @@ body {
     }
   }
 }
+.carousel .swiper-wrapper,
+.preview .swiper-wrapper,
+.breakpoint .swiper-wrapper,
+.coverflow .swiper-wrapper {
+  padding-bottom: 3rem;
+}
+
+.coverflow .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.coverflow .swiper-pagination-bullet-active {
+  background: #6FCF97;
+}
+
+.coverflow .swiper-slide-active {
+  border: 5px solid #6FCF97;
+  border-radius: 15px;
+}
+
+

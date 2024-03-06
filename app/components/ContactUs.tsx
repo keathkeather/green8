@@ -21,7 +21,7 @@ export default function ContactUs() {
             <div className="w-[20%] p-4 ml-20 text-white">
                 <p className="font-bold mb-8 text-xl">Utility Pages</p>
                 <ul className="font-['Montserrat'] text-md">
-                    <li className="mb-4"><a href="#" className="hover:underline">About</a></li>
+                    <li className="mb-4"><a href="#/WhoWeAre" className="hover:underline">About</a></li>
                     <li className="mb-4"><a href="#" className="hover:underline">Equipment</a></li>
                     <li className="mb-4"><a href="#" className="hover:underline">Testimonials</a></li>
                     <li className="mb-4"><a href="#" className="hover:underline">Rates</a></li>

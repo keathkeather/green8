@@ -9,8 +9,6 @@ export default function GetInTouch() {
   const [firstName, setFirstName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
   const [message, setMessage] = React.useState("");
-  const [modalMessage, setModalMessage] = React.useState("");
-  const [modal , setModal] = React.useState(false);
   const handleSubmit = async (event:React.FormEvent) => {
     event.preventDefault();
     sendEmail(firstName,email,lastName,message);

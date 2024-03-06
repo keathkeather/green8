@@ -1,9 +1,10 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import sendEmail from '../utils/Email';
 import RegularRate from '../components/RegularRate';
 import StudentRate from './StudentRate';
-
 export default function RatesMain(){
+  const [selectedRate, setSelectedRate] = useState('regular');
   return (
     <div className = "bg-black w-[1920px] h-[1066px]">
        <div className='bg-cover bg-center' style={{backgroundImage: "url('/HeroHeaderImage.png')"}}></div>
@@ -15,10 +16,28 @@ export default function RatesMain(){
         </span>
       </div>
       <div className="ml-[876px] p-6 mt-[25px] flex items-center justify-center w-[210px] h-[61.52px] bg-gray-800 rounded-[32.81px]">
-        <button className="rounded-l-md px-5 py-2 duration-300s dark:hover:text-white">REGULAR</button>
-        <button className="w-[107.46px] h-[45.12px] bg-gradient-to-b from-emerald-300 to-lime-300 rounded-full text-black p-3">STUDENT</button>
+        <button
+              onClick={() => setSelectedRate('regular')}
+              className={`w-[107.46px] h-[45.12px] rounded-full p-3 ${
+                selectedRate === 'regular'
+                  ? 'bg-gradient-to-b from-emerald-300 to-lime-300 text-black'
+                  : 'bg-gray-800 text-white hover:text-white'
+              }`}
+            >
+            REGULAR
+        </button>
+        <button
+            onClick={() => setSelectedRate('student')}
+            className={`w-[107.46px] h-[45.12px] rounded-full p-3 ${
+              selectedRate === 'student'
+                ? 'bg-gradient-to-b from-emerald-300 to-lime-300 text-black'
+                : 'bg-gray-800 text-white hover:text-white'
+            }`}
+          >
+            STUDENT
+        </button>
       </div>
-      <StudentRate/>  
+      {selectedRate === 'regular' ? <RegularRate /> : <StudentRate />}
       <div className="pt-[67px] text-center text-[32px] font-montserrat">
         We also offer Walk-ins for only <a className="text-green-300 font-bold">₱100 </a>
         <a className="font-normal text-green-300">per session!</a>

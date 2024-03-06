@@ -8,6 +8,16 @@ import ContactUs from "./components/ContactUs";
 import AnimatedText from "./components/AnimatedText";
 import HeroHeader from "./components/HeroHeader";
 import RatesMain from "./components/RatesMain";
+import CoverFlow from "./components/EquipmentCarousel";
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/thumbs';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/mousewheel';
 
 export default function Home() {
   return (
@@ -19,6 +29,7 @@ export default function Home() {
         <div>
           <WhoWeAre />
           <AnimatedText />
+          <CoverFlow />
         </div>
         <Reviews />
         <div className="flex flex-row justify-center">

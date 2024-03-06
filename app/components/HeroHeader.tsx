@@ -39,7 +39,9 @@ export default function HeroHeader() {
                 </div>
                     <div className="w-[156.96px] h-[41.27px] relative rounded-[22.51px] mt-[15px]">
                         <div className="w-[156.96px] h-[41.27px] left-0 top-0 absolute bg-gradient-to-b from-emerald-300 to-lime-300 rounded-[22.51px] shadow" />
+                        <a href='#GetInTouch'>
                         <div className="left-[29.05px] top-[12.35px] absolute text-center text-neutral-900 text-sm font-semibold font-inter">GET IN TOUCH</div>
+                        </a>
                     </div>
             </div>
         </div>

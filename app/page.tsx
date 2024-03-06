@@ -23,25 +23,30 @@ export default function Home() {
   return (
     <main>
       <>
-        {/* //*to use this component just use <GoogleMaps/> in the main component */}
-        <NavBar />
-        <HeroHeader />
-        <div>
+        <div id="hero">
+          <NavBar />
+          <HeroHeader />
+        </div>
+        <div id="AboutUs">
           <WhoWeAre />
           <AnimatedText />
+        </div>
+        <div id="Equipment">
           <CoverFlow />
         </div>
-        <Reviews />
-        <div className="flex flex-row justify-center">
-            <RatesMain/>
-          </div>
-        <div className="flex flex-row justify-center pt-[47px] pb-[47px]">
+        <div id="Reviews">
+          <Reviews />
+        </div>
+        <div id="Rates" className="flex flex-row justify-center">
+          <RatesMain />
+        </div>
+        <div id="GetInTouch" className="flex flex-row justify-center pt-[47px] pb-[47px]">
           <div className="mr-[47px]">
             <GoogleMaps />
           </div>
-          <div><GetInTouch/></div>
+          <div><GetInTouch /></div>
         </div>
-        <div>
+        <div id="Footer">
           <ContactUs />
         </div>
       </>

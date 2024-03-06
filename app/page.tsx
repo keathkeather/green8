@@ -1,3 +1,6 @@
+import React from 'react';
+import './globals.css';
+
 import Image from "next/image";
 import GoogleMaps from "./components/GoogleMaps";
 import GetInTouch from "./components/GetInTouch";
@@ -8,6 +11,17 @@ import ContactUs from "./components/ContactUs";
 import AnimatedText from "./components/AnimatedText";
 import HeroHeader from "./components/HeroHeader";
 import RatesMain from "./components/RatesMain";
+import CoverFlow from "./components/EquipmentCarousel";
+
+// Import Swiper styles
+// Styles must use direct files imports
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/thumbs';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/mousewheel';
 
 export default function Home() {
   return (
@@ -19,6 +33,7 @@ export default function Home() {
         <div>
           <WhoWeAre />
           <AnimatedText />
+          <CoverFlow />
         </div>
         <Reviews />
         <div className="flex flex-row justify-center">
